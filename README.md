@@ -1,40 +1,76 @@
-**🚗DoMakina2🚗– Online Car Marketplace Platform**
-Welcome to DoMakina, a full-featured car marketing platform enabling users to buy, sell, and rent vehicles in a secure and streamlined digital environment. This web application is developed as part of the Computer Engineering Course at Epoka University.
+# Do Makina? Frontend Project
 
+This repository contains the frontend code for our application, built with Vite for fast and optimized development. Below, you'll find instructions for setting up the project, installing dependencies, and running it locally.
 
-**📘 Project Overview**
-DoMakina is a multi-role system that serves four primary user groups:
+## Table of Contents
 
-Clients – Browse, filter, rent, or inquire about cars.
-Sellers – List cars for sale or rent, manage promotions and track revenue.
-Staff – Verify car listings, manage car brands, and moderate activity.
-Admin – Full system control, including managing staff and platform-wide settings.
+-   [Prerequisites](#prerequisites)
+-   [Installation](#installation)
+-   [Running the Project](#running-the-project)
+-   [Building for Production](#building-for-production)
+-   [Environment Variables](#environment-variables)
 
+## Prerequisites
 
-**🔑 Key Features**
-📋 Car Listings & Status Management
-💰 Revenue Tracking & Promotion Management
-📬 Email Verification & Password Recovery
-🔒 Role-Based Access Control (RBAC)
-📊 Admin Dashboards & Audit Logs
-⚙️ Car Verification & Re-verification Workflows
+Ensure you have the following software installed on your system:
 
+-   [Node.js](https://nodejs.org/) (version 16 or above)
+-   [npm](https://www.npmjs.com/) (version 7 or above)
 
-**👥 Team Members**
-Xhevdet Cekaj
-Eduard Jukaj
-Aldis Saliasi
+## Installation
 
-**Supervised by:
-Ervis Martinaj**
+1. **Clone the Repository**
 
-**🛠️ Tech Stack**
-Frontend: React.js
-Backend: Node.js
-Database: MySQL 9.0
-Object Storage: MinIO
-Email Services: MailTrap
-Security: JWT, Bcrypt, HTTPS
- 
-Email Services: MailTrap
-Security: JWT, Bcrypt, HTTPS
+    ```bash
+    git clone https://github.com/DoMakina/frontend.git
+    ```
+
+2. **Navigate to the Project Directory**
+
+    ```bash
+    cd frontend
+    ```
+
+3. **Install Dependencies**
+   Run the following command to install the necessary packages:
+    ```bash
+    npm install
+    ```
+
+## Running the Project
+
+To start the development server, use the following command:
+
+```bash
+npm run dev
+```
+
+This will start Vite's development server, which supports hot-reloading, enabling you to see changes in real-time. By default, the project runs at `http://localhost:5173`, though you can check the terminal for the exact URL.
+
+## Building for Production
+
+When you're ready to build the project for production, use the following command:
+
+```bash
+npm run build
+```
+
+This command compiles the project into an optimized production-ready bundle located in the `dist` directory.
+
+## Environment Variables
+
+The project relies on environment variables stored in a `.env` file. A sample configuration file, `.env.sample`, is included for reference. To configure environment variables:
+
+1. Copy `.env.sample` to `.env`:
+
+    ```bash
+    cp .env.sample .env
+    ```
+
+2. Open `.env` and update the values as needed for your local setup.
+
+## Additional Notes
+
+This README provides all the steps you need to get the project running locally. If you have any questions, feel free to reach out!
+
+---
